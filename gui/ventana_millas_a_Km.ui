@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>170</width>
+    <height>206</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calcular millas a Km</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Fondo general del diálogo */
+QDialog {
+    background-color: #f4f6f8;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 10pt;
+}
+
+/* Etiquetas */
+QLabel {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+QLabel#label_km {
+    color: #2c3e50;
+	font-size: 30pt;
+    font-weight: 500;
+}
+
+QLabel#label_resultadokm {
+    color: #2c3e50;
+	font-size: 30pt;
+    font-weight: 500;
+}
+
+/* Campos de texto */
+QLineEdit {
+    background-color: #ffffff;
+    border: 1px solid #dcdfe3;
+    border-radius: 6px;
+    padding: 6px 8px;
+    selection-background-color: #4a90e2;
+    selection-color: white;
+}
+
+QLineEdit:focus {
+    border: 1px solid #4a90e2;
+}
+
+/* Botones */
+QPushButton {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-weight: 500;
+}
+
+QPushButton:hover {
+    background-color: #3b7dc4;
+}
+
+QPushButton:pressed {
+    background-color: #2f5f94;
+}
+
+QPushButton:disabled {
+    background-color: #cfd6dd;
+    color: #7a8a99;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QPushButton" name="boton_Calcular">
+     <property name="text">
+      <string>Calcular</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Ingresa las millas</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="edit_millas"/>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_resultadokm">
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_km">
+       <property name="text">
+        <string>KM</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>Tus millas ingresadas son:</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
