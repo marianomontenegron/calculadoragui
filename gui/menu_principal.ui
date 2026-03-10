@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>767</width>
+    <height>532</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>App Ejercicios</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* ====== Aplicación principal ====== */
+QMainWindow {
+    background-color: #F5F7FA;
+    font-family: &quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Arial, sans-serif;
+    font-size: 18px;
+    color: #2C3E50;
+}
+
+/* ====== Barra de menú ====== */
+QMenuBar {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDE3EA;
+    padding: 6px;
+    font-size: 18px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 6px 14px;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected {
+    background-color: #E9EEF5;
+}
+
+QMenuBar::item:pressed {
+    background-color: #DCE6F2;
+}
+
+/* ====== Menú desplegable ====== */
+QMenu {
+    background-color: #FFFFFF;
+    border: 1px solid #DDE3EA;
+    padding: 6px;
+    font-size: 18px;
+}
+
+QMenu::item {
+    padding: 8px 28px 8px 20px;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #E9EEF5;
+    color: #1F2D3D;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #E0E6ED;
+    margin: 6px 12px;
+}
+
+/* ====== Acciones ====== */
+QMenu::item:disabled {
+    color: #A0A7B4;
+}
+
+QMenu::indicator {
+    width: 16px;
+    height: 16px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>767</width>
+     <height>54</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEjercicios">
+    <property name="title">
+     <string>Ejercicios</string>
+    </property>
+    <addaction name="actionCalculadora"/>
+    <addaction name="actionCalcular_Galones_a_Litros"/>
+    <addaction name="actionCalcular_de_millas_a_Km"/>
+    <addaction name="actionCalcular_per_metro_de_c_rculo"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuEjercicios"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCalculadora">
+   <property name="text">
+    <string>Calculadora</string>
+   </property>
+  </action>
+  <action name="actionCalcular_Galones_a_Litros">
+   <property name="text">
+    <string>Calcular Galones a Litros</string>
+   </property>
+  </action>
+  <action name="actionCalcular_de_millas_a_Km">
+   <property name="text">
+    <string>Calcular de millas a Km</string>
+   </property>
+  </action>
+  <action name="actionCalcular_per_metro_de_c_rculo">
+   <property name="text">
+    <string>Calcular perímetro del círculo</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
